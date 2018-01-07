@@ -1,3 +1,5 @@
+<h1> Sign Up </h1>
+
 <% if @article.errors.any? %>
 <h2>The Errors prevented operation</h2>
 <ul>
@@ -6,6 +8,8 @@
   <% end %>
 </ul>
 <% end %>
+
+
 
 <%= form_for @article do |f| %>
 
@@ -20,7 +24,7 @@
 </p>
 
 <p>
-  <%= f.submit %>
+  <%= f.submit "Sign Up" %>
 </p>
 <% end %>
 
